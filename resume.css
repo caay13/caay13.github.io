@@ -1,249 +1,282 @@
-/*
----------------------------------------------------------------------------------
-	STRIPPED DOWN RESUME TEMPLATE
-    html resume
 
-    v0.9: 5/28/09
+Resume UI 
+How To Make A Resume design Using html css
+ March 3, 2022  M-SoftTech  0 Comments
+Hello viewer, in this article I will tell you another resume ui design using html and css only. You have also read my old resume article but this one is totally different for other resume design. So let’s start our project.
 
-    design and code by: thingsthatarebrown.com 
-                        (matt brown)
----------------------------------------------------------------------------------
-*/
+First step you have create a folder. You can set folder name whatever you want according to your choice. Suppose your main folder name is CV. then you create two folder inside in CV folder. The first one is CSS Folder and the Second one is Image folder.
 
 
-.msg {
-    padding: 10px;
-    background: #E26868;
-    position: relative;
+CSS folder contain all CSS file those are used in your html page. Image folder contain all images file those are used in your html page.
+
+How to Create Testimonials slider Using HTML & CSS Only | CSS Testimonial Slider
+
+When you create all folders then you create an html document this is your first step after creating all folders. Then create a CSS file and link CSS file in your html page. When all things are completed then followed the code in below. If you followed this code you create an attractive resume UI Design.
+
+In this code I have saved all images save in img folder. So don’t troubled. You can change your folder name. If you change your folder name then you can also change folder name in file path location.
+
+I have also link a font awesome CDN file you can see in below code.
+
+How to Make A blog Template Design Using HTML CSS
+
+You create an html document. And then create a main div that’s class name is resume-main. Create two div inside of resume-main div. one is left-box and another one is right-box. This resume design is gradient resume design. You can see that. It’s very simple and very attractive Resume UI Design. You can use easily this design in your requirement according. You see lots of CV design in internet. But this CV design is totally different to other CV design. When your resume looks good then your confidence level is also good.
+
+Main Key Element in resume
+
+Personal Information for example Name, address, contact details.
+
+Objective
+
+Education
+
+Your work experience previous company
+
+Activities
+
+Hobbies
+
+Your work Skills
+
+That are some main key element for your resume
+
+Copy the below code and paste your html document.
+
+HTML Code
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="resume-main">
+	<div class="left-box">
+		<br><br>
+		<div class="profile">
+			<img src="image/profile.jpg">
+		</div>
+		<div class="content-box">
+		<h2>Profile Info</h2>
+		<hr class="hr1">
+		<p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+
+		<h3>Language:</h3>
+		<p class="p2">English</p>
+		<div id="progress"></div>
+		<p class="p2">Hindi</p>
+		<div id="progress1"></div>
+
+		<br><br>
+		<h2>My Skills</h2>
+		<hr class="hr1">
+		<br>
+		<div class="col-div-6"><p class="p2">HTML</p></div>
+		<div class="col-div-6">
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle1"></i>
+			<i class="fa fa-circle circle1"></i>
+		</div>
+			<div class="clearfix"></div>
+		<div class="col-div-6"><p class="p2">CSS</p></div>
+		<div class="col-div-6">
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle1"></i>
+		</div>
+			<div class="clearfix"></div>
+		<div class="col-div-6"><p class="p2">JQUERY</p></div>
+		<div class="col-div-6">
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle1"></i>
+			<i class="fa fa-circle circle1"></i>
+		</div>
+			<div class="clearfix"></div>
+		<div class="col-div-6"><p class="p2">JAVASCRIPT</p></div>
+		<div class="col-div-6">
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle"></i>
+			<i class="fa fa-circle circle1"></i>
+			<i class="fa fa-circle circle1"></i>
+			<i class="fa fa-circle circle1"></i>
+		</div>
+
+			<div class="clearfix"></div>
+			<br>
+			<h2>interests</h2>
+			<hr class="hr1">
+			<br>
+			<div class="col-div-3 col3">
+				<i class="fa fa-futbol-o in"></i>
+				<span class="inp">Sports</span>
+			</div>
+			<div class="col-div-3 col3">
+				<i class="fa fa-futbol-o in"></i>
+				<span class="inp">Drive</span>
+			</div>
+			<div class="col-div-3 col3">
+				<i class="fa fa-futbol-o in"></i>
+				<span class="inp">Sports</span>
+			</div>
+			<div class="col-div-3 col3">
+				<i class="fa fa-futbol-o in"></i>
+				<span class="inp">Sports</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="right-box">
+		<h1>
+			Manoj<br>
+			<span>Adhikari</span>
+		</h1>
+		<p class="p3">UI & UX DESIGNER</p>
+
+		<br>	
+		<h2 class="heading">Work Experience</h2>
+		<hr class="hr2">
+		<br>
+		<div class="col-div-4">
+			<p class="p5">2015-2016</p>
+			<span class="span1">Company Name</span>
+		</div>
+		<div class="col-div-8">
+			<p class="p5">Web Designer</p>
+			<span class="span1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+		</div>
+		<div class="clearfix"></div>
+		<br>
+		<div class="col-div-4">
+			<p class="p5">2015-2016</p>
+			<span class="span1">Company Name</span>
+		</div>
+		<div class="col-div-8">
+			<p class="p5">Web Designer</p>
+			<span class="span1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+		</div>
+		<div class="clearfix"></div>
+		<br>
+		<div class="col-div-4">
+			<p class="p5">2015-2016</p>
+			<span class="span1">Company Name</span>
+		</div>
+		<div class="col-div-8">
+			<p class="p5">Web Designer</p>
+			<span class="span1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+		</div>
+		<div class="clearfix"></div>
+
+		<br>	
+		<h2 class="heading">My Education</h2>
+		<hr class="hr2">
+		<br>
+		<div class="col-div-4">
+			<p class="p5">2015-2016</p>
+			<span class="span1">Company Name</span>
+		</div>
+		<div class="col-div-8">
+			<p class="p5">Web Designer</p>
+			<span class="span1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+		</div>
+		<div class="clearfix"></div>
+		<br>
+		<div class="col-div-4">
+			<p class="p5">2015-2016</p>
+			<span class="span1">Company Name</span>
+		</div>
+		<div class="col-div-8">
+			<p class="p5">Web Designer</p>
+			<span class="span1">Lorem Ipsum is simply dummy text of the .</span>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="clearfix"></div>
+
+</div>
+
+</body>
+</html>
+Copy the below code and paste your css document.
+
+CSS Code.
+
+
+:root{
+	--background: #c3c0ba;
+	--white: #fff;
+	--one: #c3266f;
+	--two: #743578;
+	--black: #54585d;
+	--process: #a5a5a5;
 }
-
-.msg h1 {
-    color: #E26868;
+*{margin:0px; padding:0px; box-sizing: border-box; font-family: system-ui;}
+body{background: var(--background);}
+.col-div-3{width: 25%; float: left;}
+.col-div-7{width: 75%; float: left;}
+.col-div-4{width: 35%; float: left;}
+.col-div-8{width: 65%; float: left;}
+.col-div-6{width: 50%; float: left; position: relative;}
+.clearfix{clear: both;}
+.resume-main{width: 700px; height: 800px; 
+	background: linear-gradient(var(--one), var(--two));
+	margin: 50px auto;
+	box-shadow:5px 5px 5px 5px #54585d33;
 }
-
-.msg a {
-    margin-left: 20px;
-    background: #408814;
-    color: white;
-    padding: 4px 8px;
-    text-decoration: none;
-}
-
-.msg a:hover {
-    background: #266400;
-}
-
-/* //-- yui-grids style overrides -- */
-body {
-    font-family: Georgia;
-    color: #444;
-}
-
-
-#inner {
-    padding: 10px 80px;
-    margin: 80px auto;
-    background: #E26868;
-    border: solid rgba(102, 102, 102, 0.888);
-    border-width: 8px 0 2px 0;
-}
-
-.yui-gf {
-    margin-bottom: 2em;
-    padding-bottom: 2em;
-    border-bottom: 1px solid #ccc;
-}
-
-/* //-- header, body, footer -- */
-#hd {
-    margin: 2.5em 0 3em 0;
-    padding-bottom: 1.5em;
-    border-bottom: 1px solid #ccc
-}
-
-#hd h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-#bd,
-#ft {
-    margin-bottom: 2em;
-}
-
-/* //-- footer -- */
-#ft {
-    padding: 1em 0 5em 0;
-    font-size: 92%;
-    border-top: 1px solid #ccc;
-    text-align: center;
-}
-
-#ft p {
-    margin-bottom: 0;
-    text-align: center;
-}
-
-/* //-- core typography and style -- */
-#hd h1 {
-    font-size: 48px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-h2 {
-    font-size: 152%
-}
-
-h3,
-h4 {
-    font-size: 122%;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    color: #333;
-}
-
-p {
-    font-size: 100%;
-    line-height: 18px;
-    padding-right: 3em;
-}
-
-a {
-    color: #990003
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-strong {
-    font-weight: bold;
-}
-
-li {
-    line-height: 24px;
-    border-bottom: 1px solid #ccc;
-}
-
-p.enlarge {
-    font-size: 144%;
-    padding-right: 6.5em;
-    line-height: 24px;
-}
-
-p.enlarge span {
-    color: #000
-}
-
-.contact-info {
-    margin-top: 7px;
-}
-
-.first h2 {
-    font-style: italic;
-}
-
-.last {
-    border-bottom: 0
-}
-
-
-/* //-- section styles -- */
-
-a#pdf {
+.left-box{width: 35%; float: left; height: 700px;}
+.right-box{width: 65%; float: left; background-color: var(--white); height: 700px;
+	margin: 50px 0px; border-radius: 50px 0px 0px 50px; padding:30px 50px;
+	box-shadow: -7px 2px 15px 2px #54585d52;}
+.profile{width: 150px; height: 150px; border: 3px solid var(--white); 
+	padding: 7px; border-radius: 50%; margin: 20px auto;}
+.profile img{width: 100%; border-radius: 50%;}
+.content-box{    padding: 0px 40px 0px 45px;}
+.content-box h2{text-transform: uppercase;font-weight: 500;color: var(--white); 
+	letter-spacing: 1px; font-size: 20px;}
+.hr1{border: none; height: 1px; background: var(--white); margin-top: 3px;}
+.p1{font-size: 11px;color: var(--white);letter-spacing: 1px;padding-top: 12px;}
+#progress {background: var(--process);border-radius: 13px;height: 8px;width: 100%;}
+#progress:after {
+    content: '';
     display: block;
-    float: left;
-    background: #666;
-    color: white;
-    padding: 6px 50px 6px 12px;
-    margin-bottom: 6px;
-    text-decoration: none;
-}
-
-a#pdf:hover {
-    background: #222;
-}
-
-.job {
-    position: relative;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #ccc;
-}
-
-.job h4 {
-    position: absolute;
-    top: 0.35em;
-    right: 0
-}
-
-.job p {
-    margin: 0.75em 0 3em 0;
-}
-
-.last {
-    border: none;
-}
-
-.skills-list {}
-
-.skills-list ul {
-    margin: 0;
-}
-
-.skills-list li {
-    margin: 3px 0;
-    padding: 3px 0;
-}
-
-.skills-list li span {
-    font-size: 152%;
-    display: block;
-    margin-bottom: -2px;
-    padding: 0
-}
-
-.talent {
-    width: 32%;
-    float: left
-}
-
-.talent h2 {
-    margin-bottom: 6px;
-}
-
-#srt-ttab {
-    margin-bottom: 100px;
-    text-align: center;
-}
-
-#srt-ttab img.last {
-    margin-top: 20px
-}
-
-/* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u {
-    width: 80.2%;
-}
-
-.yui-gf div.first {
-    width: 12.3%;
-}
-
-/* image fix starts here  */
-.img-container{
-    width: 10em;
-    height: 10em;
-}
-
-.img-container img{
-    width: 100%;
+    background: var(--white);
+    width: 50%;
     height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
+    border-radius: 9px;
 }
+#progress1 {background: var(--process);border-radius: 13px;height: 8px;width: 100%;}
+#progress1:after {
+    content: '';
+    display: block;
+    background: var(--white);
+    width: 40%;
+    height: 100%;
+    border-radius: 9px;
+}
+.content-box h3{font-size: 13px;text-transform: uppercase;letter-spacing: 1px;padding-top: 10px;
+    color: white;font-weight: 500;
+}
+.p2{font-size: 13px; margin-bottom: 5px; margin-top: 5px; color: var(--white);}
+.circle{color:var(--white); font-size: 14px!important; margin-top: 7px;}
+.circle1{color:var(--process); font-size: 14px!important; margin-top: 7px;}
+.in{background:var(--white);color: var(--one);padding: 8px;border-radius: 20px; font-size: 14px!important;}
+.inp{color: var(--white); font-size: 11px;}
+.col3{text-align: center;}
+h1{font-size: 50px; text-transform: uppercase; color: var(--black); line-height: 50px;}
+h1 span{color: var(--one);}
+.p3{letter-spacing: 4px;color: #54585d; font-weight: 500;}
+.heading{text-transform: uppercase;font-weight: 500;color: var(--one); 
+	letter-spacing: 1px; font-size: 20px;}
+.hr2{border: none; height: 1px; background: var(--black); margin-top: 3px;}
+.p5{font-weight: 700;color: var(--black);}
+.span1{font-size: 12px;color: var(--black);}
